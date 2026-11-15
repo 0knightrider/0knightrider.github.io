@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Ruhan Haq | Computer Science &amp; Data Science</title>
+  <meta name="description" content="Muhammad Ruhan Haq is a Computer Science (Data Science Track) student and undergraduate researcher at the University of Miami, building reproducible Python pipelines and interactive visualizations for scientific data." />
+  <meta name="author" content="Muhammad Ruhan Haq" />
+  <meta name="theme-color" content="#0a1120" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Muhammad Ruhan Haq | Computer Science &amp; Data Science" />
+  <meta property="og:description" content="Undergraduate researcher and developer at the University of Miami, focused on data-driven modeling, scientific computing, and statistical analysis." />
+  <meta property="og:url" content="https://0knightrider.github.io/" />
+  <meta property="og:image" content="https://0knightrider.github.io/assets/headshot.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Apply the saved theme before first paint to avoid a flash. -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.setAttribute("data-theme", saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <!-- Shared icon sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.1c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm.5.5 8.5 6.5L20.500 7"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 9h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1Zm-4 6H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m0 0-6-6m6 6 6-6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.400 1.400M5.600 18.400 7 17M17 7l1.400-1.400M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M20 14.500A8 8 0 0 1 9.500 4a8 8 0 1 0 10.500 10.500Z"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m2 9 10-5 10 5-10 5L2 9Zm4 2.500V16c0 1.500 2.700 3 6 3s6-1.500 6-3v-4.500M22 9v5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 14a5.500 5.500 0 1 0 0-11 5.500 5.500 0 0 0 0 11Zm-3.200-.800L7.500 21l4.500-2.500 4.500 2.500-1.300-7.800"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Navigation ============ -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a class="nav__brand" href="#about" aria-label="Muhammad Ruhan Haq, back to top">MRH<span>.</span></a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#about" data-nav>About</a>
+        <a href="#experience" data-nav>Experience</a>
+        <a href="#projects" data-nav>Projects</a>
+        <a href="#skills" data-nav>Skills</a>
+        <a href="#honors" data-nav>Honors</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch color theme">
+          <svg class="icon icon--sun"><use href="#i-sun" /></svg>
+          <svg class="icon icon--moon"><use href="#i-moon" /></svg>
+        </button>
+        <button class="icon-btn nav__burger" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero / About ============ -->
+    <section class="hero container" id="about">
+      <div class="hero__text">
+        <p class="badge reveal"><span class="badge__dot"></span>Miami, FL &bull; Open to CS internships &amp; research roles</p>
+        <h1 class="hero__title reveal">Muhammad <span class="accent-text">Ruhan Haq</span></h1>
+        <p class="hero__sub reveal">Computer Science major (Data Science Track) &amp; Mathematics minor at the <strong>University of Miami</strong></p>
+        <p class="hero__bio reveal">
+          Second-year undergraduate researcher and developer focused on data-driven modeling, scientific computing,
+          and statistical analysis of physical and biological systems. I turn raw sensor streams, gait kinematics,
+          and binary instrument data into reproducible Python pipelines and interactive visualizations.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary" href="#projects">View Projects <svg class="icon"><use href="#i-down" /></svg></a>
+          <button class="btn btn--ghost" type="button" data-copy-email>
+            <svg class="icon"><use href="#i-copy" /></svg><span>Copy Email</span>
+          </button>
+        </div>
+
+        <ul class="social reveal" aria-label="Social links">
+          <li><a href="https://github.com/0knightrider" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon"><use href="#i-github" /></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/muhammad-ruhan-haq/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin" /></svg></a></li>
+          <li><a href="mailto:mxh2214@miami.edu" aria-label="Email"><svg class="icon"><use href="#i-mail" /></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="hero__photo reveal">
+        <div class="photo">
+          <img id="headshot" src="assets/headshot.jpg" alt="Portrait of Muhammad Ruhan Haq" width="360" height="360" />
+          <span class="photo__fallback" aria-hidden="true">MRH</span>
+        </div>
+      </div>
+
+      <dl class="stats reveal">
+        <div><dt>GPA</dt><dd>4.0<small>/4.0</small></dd></div>
+        <div><dt>Research roles</dt><dd>4</dd></div>
+        <div><dt>Adobe Scholar</dt><dd>1<small> of 3 / yr</small></dd></div>
+        <div><dt>Graduating</dt><dd>2029</dd></div>
+      </dl>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section class="section container" id="experience">
+      <header class="section__head reveal">
+        <p class="section__tag">01 / experience</p>
+        <h2>Experience &amp; <span class="accent-text">Research</span></h2>
+        <p class="section__lead">Research groups and roles where I have built tools around real scientific data.</p>
+      </header>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip chip--accent">Research</span><time>Jan. 2026 &ndash; Present</time></div>
+          <h3>Research Analyst <span class="muted">&mdash; Bonsai Applied Computation Group</span></h3>
+          <p class="timeline__org">University of Miami &middot; Miami, FL</p>
+          <ul>
+            <li>Own the visualization and statistical-analysis stage of the <strong>Ali Lab Spinal Cord Injury Gait Recovery Pipeline</strong>, refactoring it to run cleanly across every experimental design the lab uses, including multi-group and missing-input cases.</li>
+            <li>Reworked the recovery analysis around a single pre-specified metric, <strong>Mahalanobis distance</strong> from the healthy baseline, paired with permutation testing to resolve circular feature-selection concerns raised in peer review.</li>
+            <li>Translate domain-specific research questions from faculty groups into reproducible Python and Jupyter workflows.</li>
+          </ul>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip chip--accent">Fellowship</span><time>Aug. 2026 &ndash; Present</time></div>
+          <h3>Library Research &amp; Adobe Scholar</h3>
+          <p class="timeline__org">University of Miami Libraries &middot; Miami, FL</p>
+          <ul>
+            <li>One of three undergraduates selected each year for a competitive, faculty-mentored, year-long research fellowship culminating in an independent research paper.</li>
+            <li>Investigating how generative AI reshapes cognition and knowledge production by comparing archival records of calculator adoption (c. 1985) with modern LLM usage and faculty interviews.</li>
+          </ul>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip chip--accent">Research</span><time>Jan. 2026 &ndash; Jun. 2026</time></div>
+          <h3>Undergraduate Researcher <span class="muted">&mdash; Marine Data Visualization</span></h3>
+          <p class="timeline__org">Rosenstiel School of Marine, Atmospheric, and Earth Science &middot; R/V F.G. Walton Smith</p>
+          <ul>
+            <li>Built a multi-tab, real-time Python dashboard (<strong>Gradio, Matplotlib</strong>) for use aboard a research vessel, with live sensor-folder polling and a CTD cast viewer for temperature, salinity, and depth.</li>
+            <li>Reverse-engineered two undocumented little-endian <code>float64</code> binary instrument formats (ship heading and GPS navigation) and wrote automated parsers for the live data streams.</li>
+          </ul>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip">Work</span><time>Mar. 2026 &ndash; Present</time></div>
+          <h3>IT Support Assistant</h3>
+          <p class="timeline__org">University of Miami &middot; Miami, FL</p>
+          <ul>
+            <li>Provide front-line technical troubleshooting across hardware, software, and institutional systems for students, faculty, and staff.</li>
+          </ul>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__meta"><span class="chip chip--accent">Research</span><time>Jul. 2024 &ndash; Aug. 2024</time></div>
+          <h3>Research Assistant <span class="muted">&mdash; LUMS RISE Program</span></h3>
+          <p class="timeline__org">Lahore University of Management Sciences &middot; Lahore, Pakistan</p>
+          <ul>
+            <li>Built system-dynamics irrigation models in <strong>Vensim</strong> that integrate soil moisture, weather, and crop parameters to simulate crop water stress under drought scenarios.</li>
+            <li>Validated and tuned the simulations against real-world field sensor data to support a data-driven irrigation framework.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="section container" id="projects">
+      <header class="section__head reveal">
+        <p class="section__tag">02 / projects</p>
+        <h2>Featured <span class="accent-text">Projects</span></h2>
+        <p class="section__lead">Research tooling, data applications, and software I have designed and built.</p>
+      </header>
+
+      <div class="projects">
+        <article class="card reveal">
+          <div class="card__top"><span class="card__num">01</span><span class="chip chip--accent">Research</span></div>
+          <h3>Live Oceanographic Sensor Dashboard</h3>
+          <p class="card__role">R/V F.G. Walton Smith</p>
+          <p>Real-time vessel telemetry and CTD cast visualization suite that parses binary navigation and heading packets alongside live CSV sensor feeds into interactive depth, salinity, and temperature profiles.</p>
+          <details>
+            <summary>How it works</summary>
+            <ul>
+              <li>Polls the ship's data folders and re-plots as new sensor files arrive.</li>
+              <li>Custom parsers decode undocumented little-endian <code>float64</code> heading and GPS records.</li>
+              <li>Multi-tab Gradio interface with a dedicated CTD cast viewer.</li>
+            </ul>
+          </details>
+          <ul class="tags"><li>Python</li><li>Gradio</li><li>Matplotlib</li><li>Binary Parsing</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top"><span class="card__num">02</span><span class="chip chip--accent">Research</span></div>
+          <h3>Spinal Cord Injury Gait Recovery Pipeline</h3>
+          <p class="card__role">Ali Lab &middot; University of Miami</p>
+          <p>Reproducible statistical analysis and visualization pipeline that quantifies locomotor recovery in preclinical models from gait kinematics, giving the lab an objective measure of how far treatment restores healthy walking.</p>
+          <details>
+            <summary>How it works</summary>
+            <ul>
+              <li>Scores recovery as Mahalanobis distance from the healthy baseline.</li>
+              <li>Non-parametric permutation testing for group comparisons.</li>
+              <li>Handles baseline-only, single-treatment, and multi-treatment designs.</li>
+            </ul>
+          </details>
+          <ul class="tags"><li>Python</li><li>NumPy</li><li>Pandas</li><li>SciPy</li><li>Statistical Modeling</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top"><span class="card__num">03</span><span class="chip chip--live">Live App</span></div>
+          <h3>SpendWell</h3>
+          <p class="card__role">AI Installment &amp; Contract Analyzer</p>
+          <p>Full-stack financial decision web app that parses installment terms and contract fine print to evaluate whether a payment plan is affordable before the user commits.</p>
+          <details>
+            <summary>How it works</summary>
+            <ul>
+              <li>Extracts payment schedules, fees, and key terms from the contract text.</li>
+              <li>Weighs the total cost against the user's budget to give an affordability verdict.</li>
+            </ul>
+          </details>
+          <ul class="tags"><li>Python</li><li>JavaScript</li><li>Web App</li><li>FinTech</li></ul>
+          <a class="card__link" href="https://spendwell-ds8c.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo <svg class="icon"><use href="#i-arrow" /></svg></a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top"><span class="card__num">04</span><span class="chip">Academic</span></div>
+          <h3>Oceanographic Data Explorer</h3>
+          <p class="card__role">Scientific Python</p>
+          <p>Interactive data-ingestion and exploratory analysis tool that transforms raw marine measurements into clean, analysis-ready datasets with comparative profiles and summary statistics.</p>
+          <details>
+            <summary>How it works</summary>
+            <ul>
+              <li>Cleans and preprocesses raw measurements with Pandas.</li>
+              <li>Compares temperature, salinity, and depth profiles side by side.</li>
+            </ul>
+          </details>
+          <ul class="tags"><li>Python</li><li>Pandas</li><li>Matplotlib</li><li>Gradio</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top"><span class="card__num">05</span><span class="chip chip--accent">Research</span></div>
+          <h3>Dynamic Crop Water-Stress Simulator</h3>
+          <p class="card__role">LUMS RISE Program</p>
+          <p>System-dynamics simulation that models agricultural irrigation schedules under drought stress, calibrated against empirical soil-moisture sensor data.</p>
+          <details>
+            <summary>How it works</summary>
+            <ul>
+              <li>Stock-and-flow model linking soil moisture, weather, and crop parameters.</li>
+              <li>Scenario runs across drought conditions and irrigation strategies.</li>
+            </ul>
+          </details>
+          <ul class="tags"><li>Vensim</li><li>System Dynamics</li><li>Data Validation</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__top"><span class="card__num">06</span><span class="chip">Academic</span></div>
+          <h3>Library Management System</h3>
+          <p class="card__role">Object-Oriented Java</p>
+          <p>Console-based cataloguing and circulation engine with duplicate prevention, borrower tracking, search, and file-based persistence between sessions.</p>
+          <details>
+            <summary>How it works</summary>
+            <ul>
+              <li>Class hierarchy and collections for items, borrowers, and checkouts.</li>
+              <li>Saves and restores full library state through file I/O.</li>
+            </ul>
+          </details>
+          <ul class="tags"><li>Java</li><li>OOP</li><li>Data Structures</li><li>File I/O</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section class="section container" id="skills">
+      <header class="section__head reveal">
+        <p class="section__tag">03 / skills</p>
+        <h2>Core <span class="accent-text">Stack</span></h2>
+        <p class="section__lead">The tools I reach for first, and the ones I use to support them.</p>
+      </header>
+
+      <div class="skills">
+        <article class="skill-group skill-group--core reveal">
+          <header><h3>Core Languages</h3><span class="tier">Core</span></header>
+          <p>My strongest languages, used daily across research and coursework.</p>
+          <ul class="pills pills--core pills--lg"><li>Python</li><li>Java</li></ul>
+        </article>
+
+        <article class="skill-group skill-group--core reveal">
+          <header><h3>Scientific &amp; ML Stack</h3><span class="tier">Core</span></header>
+          <p>Modeling, analysis, and visualization for scientific data.</p>
+          <ul class="pills pills--core"><li>PyTorch</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Gradio</li><li>Vensim</li></ul>
+        </article>
+
+        <article class="skill-group skill-group--wide reveal">
+          <header><h3>Additional Languages &amp; Tools</h3><span class="tier tier--muted">Working knowledge</span></header>
+          <ul class="pills"><li>C#</li><li>JavaScript / TypeScript</li><li>R</li><li>SciPy</li><li>Scikit-learn</li><li>Git / GitHub</li><li>Linux / macOS CLI</li><li>Unity</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Education & Honors ============ -->
+    <section class="section container" id="honors">
+      <header class="section__head reveal">
+        <p class="section__tag">04 / honors</p>
+        <h2>Education &amp; <span class="accent-text">Honors</span></h2>
+      </header>
+
+      <div class="honors">
+        <div class="honors__col">
+          <h3 class="col-title"><svg class="icon"><use href="#i-cap" /></svg>Education</h3>
+
+          <article class="edu reveal">
+            <div class="edu__row"><h4>University of Miami</h4><time>Expected May 2029</time></div>
+            <p>B.S. in Computer Science (Data Science Track), Minor in Mathematics</p>
+            <p class="edu__gpa">GPA <strong>4.0</strong> / 4.0</p>
+          </article>
+
+          <article class="edu reveal">
+            <div class="edu__row"><h4>Cambridge International A Levels</h4><time>Completed 2025</time></div>
+            <p>Mathematics, Further Mathematics, Physics, Computer Science</p>
+          </article>
+        </div>
+
+        <div class="honors__col">
+          <h3 class="col-title"><svg class="icon"><use href="#i-award" /></svg>Honors &amp; Awards</h3>
+          <ul class="awards">
+            <li class="reveal"><strong>Library Research &amp; Adobe Scholar</strong><span>University of Miami Libraries &middot; 2026&ndash;2027</span></li>
+            <li class="reveal"><strong>Bronze Medal</strong><span>International Youth Math Challenge &middot; Top 20% globally</span></li>
+            <li class="reveal"><strong>President's Honor Roll, Provost's Honor Roll &amp; Dean's List</strong><span>University of Miami &middot; Fall 2025, Spring 2026</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section container" id="contact">
+      <div class="contact reveal">
+        <p class="section__tag">05 / contact</p>
+        <h2>Let's build something <span class="accent-text">together.</span></h2>
+        <p>I am open to computer science internships and research opportunities. The fastest way to reach me is by email.</p>
+        <div class="hero__cta">
+          <button class="btn btn--primary" type="button" data-copy-email>
+            <svg class="icon"><use href="#i-copy" /></svg><span>mxh2214@miami.edu</span>
+          </button>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/muhammad-ruhan-haq/" target="_blank" rel="noopener noreferrer">
+            <svg class="icon"><use href="#i-linkedin" /></svg>LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Muhammad Ruhan Haq</p>
+      <nav aria-label="Footer">
+        <a href="https://github.com/0knightrider" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammad-ruhan-haq/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:mxh2214@miami.edu">Email</a>
+      </nav>
+      <a class="footer__top" href="#about">Back to Top &uarr;</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
